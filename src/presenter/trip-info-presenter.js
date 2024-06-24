@@ -26,7 +26,7 @@ export default class TripInfoPresenter {
     const waypoints = this.#waypointsModel.waypoints;
     const isNoWaypoints = waypoints.length === 0;
 
-    if (isFailedToLoadWaypoints || isNoWaypoints === 0) {
+    if (isFailedToLoadWaypoints || isNoWaypoints) {
       return;
     }
 

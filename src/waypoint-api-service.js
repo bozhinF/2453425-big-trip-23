@@ -9,7 +9,7 @@ const Method = {
 
 export default class WaypointApiService extends ApiService {
   get waypoints() {
-    return this._load({ url: 'points1' }).then(ApiService.parseResponse);
+    return this._load({ url: 'points' }).then(ApiService.parseResponse);
   }
 
   get offers() {
